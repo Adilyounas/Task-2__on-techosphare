@@ -22,16 +22,6 @@ import axios from "axios";
 function EditToolbar(props) {
   const { setRows, setRowModesModel } = props;
 
-  // const handleClick = () => {
-  //   const id = randomId();
-  //   setRows((oldRows) => [...oldRows, { id, name: "", age: "", isNew: true }]);
-  //   setRowModesModel((oldModel) => ({
-  //     ...oldModel,
-  //     [id]: { mode: GridRowModes.Edit, fieldToFocus: "name" },
-  //   }));
-  // };
-
-
   const handleClick = () => {
     const id = randomId();
     setRows((oldRows) => [
