@@ -6,3 +6,13 @@
     align-items: center;
     /* border: 10px solid red; */
 }
+
+.css-yrdy0g-MuiDataGrid-columnHeaderRow{
+    font-weight: bolder;
+    font-size: 20px;
+    color: blue;
+}
+
+.Cellclass{
+    border: 1px solid black;
+}

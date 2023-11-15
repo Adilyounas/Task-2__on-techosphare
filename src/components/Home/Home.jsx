@@ -89,7 +89,7 @@ export default function Home() {
   };
 
   const columns = [
-    { field: "id", headerName: "ID", width: 200, editable: true },
+    { field: "id", headerName: "ID",  align: "center", headerAlign: "center", width: 160, editable: true,cellClassName:"Cellclass" },
     {
       field: "title",
       headerName: "Title",
@@ -102,10 +102,12 @@ export default function Home() {
     {
       field: "completed",
       headerName: "Completed",
+      align: "center", headerAlign: "center",
       type: "singleSelect",
       width: 180,
       editable: true,
       valueOptions: [true, false],
+  
     },
 
     {
