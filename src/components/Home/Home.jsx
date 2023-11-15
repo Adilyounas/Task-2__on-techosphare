@@ -33,7 +33,6 @@ function EditToolbar(props) {
       [id]: { mode: GridRowModes.Edit, fieldToFocus: "name" },
     }));
   };
-  
 
   return (
     <GridToolbarContainer>
@@ -63,7 +62,7 @@ export default function Home() {
   };
 
   const handleDeleteClick = (id) => () => {
-    setRows(rows.filter((row) => row.id !== id));    
+    setRows(rows.filter((row) => row.id !== id));
   };
 
   const handleCancelClick = (id) => () => {
@@ -89,7 +88,15 @@ export default function Home() {
   };
 
   const columns = [
-    { field: "id", headerName: "ID",  align: "center", headerAlign: "center", width: 160, editable: true,cellClassName:"Cellclass" },
+    {
+      field: "id",
+      headerName: "ID",
+      align: "center",
+      headerAlign: "center",
+      width: 160,
+      editable: true,
+      cellClassName: "Cellclass",
+    },
     {
       field: "title",
       headerName: "Title",
@@ -102,12 +109,12 @@ export default function Home() {
     {
       field: "completed",
       headerName: "Completed",
-      align: "center", headerAlign: "center",
+      align: "center",
+      headerAlign: "center",
       type: "singleSelect",
       width: 180,
       editable: true,
       valueOptions: [true, false],
-  
     },
 
     {
@@ -202,7 +209,6 @@ export default function Home() {
               slotProps={{
                 toolbar: { setRows, setRowModesModel },
               }}
-            
             />
           </Box>
         </div>
